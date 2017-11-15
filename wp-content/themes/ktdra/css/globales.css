@@ -1,0 +1,155 @@
+/* Generales */
+	
+	body{
+		font-family: 'Oswald', sans-serif;
+	}
+
+	.aling-left{
+		text-align: left;
+	}
+	
+	.aling-right{
+		text-align: right;
+	}
+
+	.titulos{
+		text-align: left;
+		font-weight: 600;
+		font-size: 30px;
+		border-bottom: solid 2px #9c9c9c;
+		margin-bottom: 10px;
+		overflow: hidden;
+	}
+
+	.titulos a{
+		position: relative;
+		float: right;
+	    background-color: #9c9c9c;
+	    width: 500px;
+	    display: inline-block;
+	    text-align: center;
+   	 	color: #FFF;
+   	 	text-decoration: none;
+   	 	padding: 10px 0px;
+    	font-size: 20px;
+	}
+
+	.titulos a:before{
+		content: " ";
+		position: absolute;
+		left: -100px;
+		top: 0px;
+	    width: 0px;
+	    height: 0px;
+		border-bottom: 100px solid #9c9c9c;
+   	 	border-left: 100px solid transparent;
+	}
+
+	a:hover {
+		color: #e5322d !important;
+	}
+
+/* Menu */
+
+	nav{
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: auto;
+		box-sizing: border-box;
+		padding: 0px 20px;
+		z-index: 99999999999999999999999;
+	}
+
+	nav > .menu{
+		display: block;
+		max-width: 1200px;
+		margin: 0px auto;
+		overflow: hidden;
+		padding: 20px 0px;
+	}
+
+	nav > .menu > .logo{
+		float: left;
+		width: 200px;
+		height: 100px;
+
+		background-image: url( ../img/logo.png );
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	nav > .menu > ul{
+		float: right;
+		text-align: right;
+		display: table;
+	}
+
+	nav > .menu > ul > li{
+		display: table-cell;
+		vertical-align: middle;
+		height: 100px;
+	}
+
+	nav > .menu > ul > li > a{
+		color: #FFF;
+		font-weight: 400;
+		padding-right: 10px;
+	    font-size: 20px;
+		text-transform: uppercase;
+	}
+
+	.fondo-tranparente{
+		background-color: transparent;
+		transition: all .5s ease-in-out;
+	}
+
+	.fondo-blanco{
+		background-color: #FFF;
+		transition: all .5s ease-in-out;
+		border-bottom: solid 1px #dadada;
+	}
+
+	.fondo-blanco *{
+		color: #747474 !important;
+	}
+
+	.fondo-blanco > .menu > .logo {
+	    height: 80px;
+	}
+
+	.fondo-blanco > .menu > ul > li {
+	    display: table-cell;
+	    vertical-align: middle;
+	    height: 80px;
+	}
+
+	.fondo-blanco > .menu {
+	    padding: 10px 0px;
+	}
+
+/* Footer */
+
+	footer{
+		background-color: #333;
+		padding: 20px;
+		overflow: hidden;
+		width: 100%;
+		max-height: 100%;
+		box-sizing: border-box;
+		padding: 10px 0px;
+		color: #FFF;
+	}
+
+	footer section{
+		margin: 0px auto;
+		max-width: 1200px;
+		height: 100%;
+	}
+
+	.footer > div {
+		float: left;
+		width: 50%;
+	}

@@ -1,0 +1,263 @@
+header {
+	display: table !important;
+	width: 100%;
+	height: 600px;
+	max-height: 100%;
+	box-sizing: border-box;
+	background-image: url( ../img/header.jpg );
+	background-position: center;
+	background-size: cover;
+}
+
+.header_interno{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 100%;
+	height: 500px;
+	color: #FFF;
+	font-family: 'Oswald', sans-serif;
+}
+
+.header_titulo{
+	font-size: 50px;
+	line-height: 50px;
+}
+
+.header_sub_titulo{
+	font-size: 30px;
+	line-height: 30px;
+}
+
+section{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	max-height: 100%;
+	box-sizing: border-box;
+	padding: 20px 0px;
+}
+
+section > div{
+	margin: 0px auto;
+	max-width: 1200px;
+	height: 100%;
+}
+
+section > div > article{
+	float: left;
+	width: 33.3333333333%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+/* Productos */
+
+	section.productos {
+		height: 550px;
+	    padding: 50px 0px;
+	}
+
+	section.productos > div > article > div{
+		box-shadow: 1px 1px 1px #AAA;
+	    border: solid 1px #AAA;
+	    width: 100%;
+	    height: calc( 100% - 55px );
+	}
+
+	.contenedor_img{
+		width: 100%;
+		height: calc( 100% - 100px );
+		border-bottom: solid 1px #AAA;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.contenedor_detalle{
+		width: 100%;
+		height: 100px;
+	}
+
+	.contenedor_detalle > div{
+		text-align: center;
+		font-family: 'Oswald', sans-serif;
+		font-size: 30px;
+		padding: 20px 0px;
+	}
+
+/* Gente */
+
+	.gente {
+		line-height: 1.3;
+	}
+
+	.gente article{
+		display: table;
+		text-align: center;
+		padding: 30px 0px;
+	}
+
+	.gente .avatar{
+	    font-size: 80px;
+	    border: solid 3px #AAA;
+	    border-radius: 50%;
+	    width: 80px;
+	    height: 80px;
+	    padding: 45px;
+	    transition: all .3s ease-in-out;
+	    display: block;
+	    margin: 0px auto;
+	    background-size: cover;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	}
+
+	.gente article > div {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.gente article > div > div {
+		text-align: center;
+		font-family: 'Oswald', sans-serif;
+		font-size: 30px;
+	}
+
+	.gente .nombre_gente {
+		text-align: center;
+		font-family: 'Oswald', sans-serif;
+		font-size: 20px;
+	}
+
+/* Redes */
+
+	.redes article{
+		display: table;
+		text-align: center;
+		padding: 30px 0px;
+	}
+
+	.redes i{
+		font-size: 80px;
+		border: solid 3px #AAA;
+		border-radius: 50%;
+		width: 80px;
+		height: 80px;
+		padding: 45px;
+		cursor: pointer;
+		transition: all .3s ease-in-out;
+	}
+
+	.redes article > div {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.redes article > div > div {
+		text-align: center;
+		font-family: 'Oswald', sans-serif;
+		font-size: 30px;
+	}
+
+	.redes .fa-facebook:hover{
+	    background: #3c5a99;
+    	color: #FFF;
+	}
+
+	.redes .fa-twitter:hover{
+	    background: #33bdfd;
+    	color: #FFF;
+	}
+
+	.redes .fa-instagram:hover{
+	    background: #eb4a4e;
+    	color: #FFF;
+	}
+
+/* Quienes somos */
+
+	.somos{
+		overflow: hidden;
+	    padding: 50px 0px;
+	}
+
+	.somos article {
+		width: 33.333333333333% !important;
+		float: left;
+		height: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+
+	.somos h2 {
+	    font-size: 30px;
+	}
+
+	.somos p {
+	    font-size: 17px;
+	}
+
+/* Contáctano */
+
+	.contactano{
+		overflow: hidden;
+		height: 620px;
+	    padding: 50px 0px;
+	}
+
+	.contactano article {
+		width: 50% !important;
+		float: left;
+		height: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+
+	.contactano input,
+	.contactano select
+	{
+		width: 100%;
+	    margin: 0px 0px 6px !important;
+	    padding: 10px !important;
+	    border: 1px solid #ccc;
+	    border-radius: 3px;
+		font-family: 'Oswald', sans-serif;
+	}
+
+	.contactano textarea{
+		resize: none;
+		font-family: 'Oswald', sans-serif;
+	    height: 241px;
+	    padding: 15px;
+	}
+
+	.contactano input:focus,
+	.contactano select:focus,
+	.contactano textarea:focus
+	{
+		outline: none;
+		box-shadow: 0px 0px 0px #FFF;
+	}
+
+	.botones_container{
+		overflow: hidden;
+		clear: both;
+		margin: 0px 20px;
+	}
+
+	.contactano input[type='submit']{
+		background-color: #333;
+		width: 300px;
+		float: right;
+		border-radius: 0px;
+		padding: 15px !important;
+		color: #FFF !important;
+		font-weight: 400;
+		font-size: 16px;
+	}
+
+	.contactano input[type='submit']:hover{
+		color: #e5322d !important;
+	}
